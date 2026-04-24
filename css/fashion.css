@@ -119,9 +119,21 @@ box-shadow: 5px 5px 10px rgb(0, 0, 0);
     justify-content: space-between;
 }
 .main-body{
-    margin-bottom: 500px;
+    
 }
 .h1 img{
     width: 1050px;
 
+}
+.img-pick img{
+    height: 300px;
+}
+.poster-sliders{
+    margin-top: 60px;
+}
+.poster-sliders img{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
 }
