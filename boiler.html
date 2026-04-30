@@ -1,377 +1,212 @@
----------------------------------------html----------------------------------------
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ShopVerse</title>
-    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
     <div class="outer-container">
-        <!-- navbar -->
-       <div class="nav-body">
-         <div class="first-row">
-            <div class="row">
-            <div class="col-sm-7">
-                <nav class="navbar nav-top ">
+
+        <!-- NAVBAR -->
+        <div class="nav-body">
+          <div class="row align-items-center">
+            <div class="col-6 col-sm-7">
+              <nav class="navbar nav-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <span id="frst-name" >Shop</span><span id="sec-name">Verse</span>
-                    </a>   
+                  <a class="navbar-brand" href="#">
+                    <span id="frst-name">Shop</span><span id="sec-name">Verse</span>
+                  </a>
                 </div>
-                </nav>
+              </nav>
             </div>
-            <div class="col-sm-5">
-                <div class="right-part">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>B183,Block C, Delta 1 , Gr.Noida... </span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
+            <div class="col-6 col-sm-5">
+              <div class="right-part">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="location-text">B183, Block C, Delta 1, Gr.Noida...</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
             </div>
-        </div>
-         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                 <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
-                    </form>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <form class="search-form" role="search">
+                <input class="form-control search-input" type="search" placeholder="Search products..." aria-label="Search"/>
+              </form>
             </div>
-        </div>
-        <div class="sec-nav">
+          </div>
+
+          <div class="sec-nav">
             <div class="row">
-            <div class="col-sm-12">
+              <div class="col-12">
                 <nav class="navbar">
-                <form class="container-fluid m-0">
-                    <button class="nav-btn" type="button">ShopVerse</button>
-                    <button class="nav-btn" id="sec-btn" type="button">Grocery</button>
-                    <button class="nav-btn" id="third-btn"  type="button">Rewards</button>
-                   <div class="sec-right">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <i class="fa-solid fa-cart-arrow-down"></i>
-                    <div class="box">
-                        <p style="font-size: 15px;">More..</p>
+                  <form class="container-fluid sec-nav-form">
+                    <div class="nav-buttons">
+                      <button class="nav-btn" type="button">ShopVerse</button>
+                      <button class="nav-btn" id="sec-btn" type="button">Grocery</button>
+                      <button class="nav-btn" id="third-btn" type="button">Rewards</button>
                     </div>
-                </div>
-                </form>
-                
+                    <div class="sec-right">
+                      <i class="fa-solid fa-circle-user"></i>
+                      <i class="fa-solid fa-cart-arrow-down"></i>
+                      <div class="box">
+                        <span style="font-size: 13px;">More</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </form>
                 </nav>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-       </div>
+
         <hr id="line">
+
+        <!-- CATEGORIES -->
         <div class="categories-sec">
-            <div class="row ">
-                <div class="col-sm-1">
-                    <a href="#">
-                        <i class="fa-solid fa-shirt"></i>
-                        <span>Fashion</span>
-                    </a>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <span>Mobiles</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-tv"></i>
-                    <span>Home</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-pump-medical"></i>
-                    <span>Beauty</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-baseball"></i>
-                    <span>Sports</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-couch"></i>
-                    <span>Furniture</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-chess-knight"></i>
-                    <span>Toys</span>
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-blender-phone"></i>
-                    <span>Kitchen</span>            
-                </div>
-                <div class="col-sm-1">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Books</span>
-                </div>
-                <div class="col-sm-1">
-                   <i class="fa-solid fa-socks"></i>
-                   <span>Footwear</span>
-                </div>
-                <div class="col-sm-1">
-                   <i class="fa-solid fa-bag-shopping"></i>
-                   <span>Purse</span>
-                </div>
+          <div class="row g-3 justify-content-center">
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/fashion.html">
+                <i class="fa-solid fa-shirt"></i>
+                <span>Fashion</span>
+              </a>
             </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/Mobile.html">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Mobiles</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/Home.html">
+                <i class="fa-solid fa-tv"></i>
+                <span>Home</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/beauty.html">
+                <i class="fa-solid fa-pump-medical"></i>
+                <span>Beauty</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/sports.html">
+                <i class="fa-solid fa-baseball"></i>
+                <span>Sports</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/furniture.html">
+                <i class="fa-solid fa-couch"></i>
+                <span>Furniture</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/toys.html">
+                <i class="fa-solid fa-chess-knight"></i>
+                <span>Toys</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/kitchen.html">
+                <i class="fa-solid fa-blender-phone"></i>
+                <span>Kitchen</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/books.html">
+                <i class="fa-solid fa-book"></i>
+                <span>Books</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/footwear.html">
+                <i class="fa-solid fa-socks"></i>
+                <span>Footwear</span>
+              </a>
+            </div>
+            <div class="col-3 col-sm-2 col-md-1 cat-item">
+              <a href="./nav-links/purse.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Purse</span>
+              </a>
+            </div>
+          </div>
         </div>
+
         <hr id="line">
-        <!-- navbar -->
 
-        <!-- slider -->
-        
-        <!-- slider -->
+   
 
-   <div class="footer-sec">
-    <!-- Footer -->
-            <footer class="text-center ">
-            <!-- Section: Social media -->
-            <section class="d-flex  p-4 social-sec">
-                <!-- Left -->
-                <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-                </div>
-                <!-- Left -->
+    <!-- FOOTER -->
+    <div class="footer-sec">
+      <footer class="text-center">
+        <section class="d-flex p-4 social-sec">
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <div class="social-icons">
+            <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+          </div>
+        </section>
 
-                <!-- Right -->
-                <div class="right">
-                <a href="" class="me-4 text-reset text-end">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
-                </a>
-                </div>
-                <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-12 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>ShopVerse
+                </h6>
+                <p>Find high-performance activewear and sportswear built with the latest technology to help you push your limits. We're here to help you train harder, run faster, and go further.</p>
+              </div>
 
-            <!-- Section: Links  -->
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>ShopVerse
-                    </h6>
-                    <p>
-                        Find high-performance activewear and sportswear built with the latest technology to help you push your limits. Whether you’re a runner, a basketball player, a footballer, or someone who just loves to stay active, our sports shop is your home. We’re here to help you train harder, run faster, and go further, with products that keep up with your movement and support your goals.
-                    </p>
-                    </div>
-                    <!-- Grid column -->
+              <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p><a href="#!" class="text-reset">Sell on ShopVerse</a></p>
+                <p><a href="#!" class="text-reset">Buy With ShopVerse</a></p>
+                <p><a href="#!" class="text-reset">Easy Cancel and Return</a></p>
+                <p><a href="#!" class="text-reset">SiteMap</a></p>
+              </div>
 
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Products
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Sell on ShopVerse</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Buy With ShopVerse</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Easy Cancel and Return</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">SiteMap</a>
-                    </p>
-                    </div>
-                    <!-- Grid column -->
+              <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p><a href="#!" class="text-reset">Pricing</a></p>
+                <p><a href="#!" class="text-reset">Settings</a></p>
+                <p><a href="#!" class="text-reset">Orders</a></p>
+                <p><a href="#!" class="text-reset">Help</a></p>
+              </div>
 
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Useful links
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Pricing</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Settings</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Orders</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Help</a>
-                    </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> Delta1,Gr.Noida,India</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        @shopverse.com
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i>+91-9936458296</p>
-                    <p><i class="fas fa-print me-3"></i>+91-9936458296</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-                </div>
-            </section>
-            <!-- Section: Links  -->
-
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                © 2021 Copyright:
-                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ShopVerse.com</a>
+              <div class="col-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Delta1, Gr.Noida, India</p>
+                <p><i class="fas fa-envelope me-3"></i>@shopverse.com</p>
+                <p><i class="fas fa-phone me-3"></i>+91-9936458296</p>
+                <p><i class="fas fa-print me-3"></i>+91-9936458296</p>
+              </div>
             </div>
-            <!-- Copyright -->
-            </footer>
-<!-- Footer -->
+          </div>
+        </section>
 
-
-   </div>
-
+        <div class="text-center p-4" style="background-color: rgba(0,0,0,0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="#">ShopVerse.com</a>
+        </div>
+      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
----------------------------------------------CSS-------------------------------------------------------
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.outer-container{
-    margin: 0px auto;
-    width: 1000px;
-}
-
-.sec-nav{
-    margin-top: 10px;
-    width: 95%;
-}
-.sec-right{
-    
-    display: flex;
-    justify-content: end;
-    gap: 30px; 
-    font-size: 20px;
-    
-    
-}
-.d-flex{
-    width: 93%;
-    height: 30px;
-    border: 1px solid #05152e;
-    border-radius: 7px;
-}
-.right-part{
-    margin-right: 80px;
-    margin-top: 15px;
-}
-#frst-name{
-    color: #05152e;
-    font-size: 23px;
-    font-weight: 900;
-}
-#sec-name{
-    color: #05152e;
-    font-size: 23px;
-    font-weight: 400;
-}
-.nav-btn{
-    width: 106px;
-    height: 34px;
-    border-radius: 10px;
-    background-color: #05152e;
-    color: white;
-    font-weight:700;
-    border: none;
-}
-.nav-btn:hover{
-box-shadow: 5px 5px 10px rgb(0, 0, 0);
-}
-
-#third-btn{
-    background-color: rgba(188, 183, 183, 0.842);
-    color: black;    
-}
-#third-btn:hover{
-    
-    background-color: #05152e;
-    color: white;
-    transition: ease-out;
-}
-#sec-btn{
-    background-color: rgba(188, 183, 183, 0.842);;
-    color: black;
-}
-#sec-btn:hover{
-    background-color: #05152e;
-    transition: ease-out;
-    color: white;
-}
-.box{
-    width: 60px;
-    text-align: center;
-    background-color: #46689e;
-    height: 25px;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 15px;
-}
-.categories-sec{
-    width: 98%;
-    display: flex;
-    gap:80px;
-    margin-left: 40px;
-}
-.categories-sec a{
-    color: #05152e;
-    text-decoration: none;
-}
-.categories-sec a :hover{
-   transition: width 0.5s ease;
-    background-color: rgba(120, 219, 120, 0.587);
-}
-
-.categories-sec i{
-    margin-left: 10px;
-    font-size: 27px;
-    
-}
-#line{
-    width: 95%;
-}
-.footer-sec{
-    background-color: #05152e;
-    color: white;
-}
-.social-sec{
-    width: 85%;
-    display: flex;
-    margin-left: 100px;
-    justify-content: space-between;
-}
-
-
